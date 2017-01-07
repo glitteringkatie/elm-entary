@@ -61,7 +61,7 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="primary">
-            <Heading size={2} fit caps lineHeight={1} textColor="elmGrey">
+            <Heading size={2} fit caps lineHeight={1} textColor="black">
               Intro To Elm
             </Heading>
             <Heading size={1} fit caps>
@@ -97,31 +97,49 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
+            <CodePane
+              lang="jsx"
+              textSize=".75em"
+              source={`
+  var Elm = require('dist/elm/app.js');
+  var node = document.getElementById('elm-app');
+  var app = Elm.App.embed(node);
+              `}
+              margin="20px auto"
+            />
+            <Heading size={2} caps fit textColor="elmGreen" textFont="primary">
               Using with JavaScript
             </Heading>
-            <List textColor="elmGrey">
-              <ListItem>Yes</ListItem>
-            </List>
           </Slide>
           <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
+            <Heading size={2} caps fit textColor="elmOrange" textFont="primary">
               Using with React
             </Heading>
-            <List textColor="elmGrey">
-              <ListItem>Yes</ListItem>
-            </List>
+            <CodePane
+              lang="jsx"
+              textSize=".75em"
+              source={`
+  import Elm from 'react-elm-components';
+  import { App } from '../dist/elm/app.js';
+
+  function render() {
+    return <Elm src={App} />;
+  }
+              `}
+              margin="20px auto"
+            />
           </Slide>
-          <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Tell me more, tell me more
+          <Slide transition={["slide"]} bgColor="primary" notes="You can even put notes on your slide. How awesome is that?">
+            <Heading size={2} caps textColor="white" textFont="primary">
+              Tell me more!
             </Heading>
-            <Heading size={3} fit textColor="primary" textFont="primary">
-              (like does he have a car)
-            </Heading>
-            <List textColor="elmGrey">
-              <ListItem>Yes</ListItem>
-            </List>
+            <Text textSize="3em">Join #elm-lang</Text>
+              <Link href="http://elm-lang.org/">
+                <Text textSize="3em" textColor="elmDarkGrey">elm-lang.org</Text>
+              </Link>
+            <Link href="https://www.elm-tutorial.org/">
+              <Text textSize="3em" textColor="elmDarkGrey">elm-tutorial.org</Text>
+            </Link>
           </Slide>
 
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
