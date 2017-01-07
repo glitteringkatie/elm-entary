@@ -1,12 +1,14 @@
-# Spectacle Boilerplate
+# Intro to Elm Presentation
 
-## Reference
+## Built with Spectacle
+
+This presentation was built with [Spectacle Boilerplate](https://github.com/FormidableLabs/spectacle-boilerplate). This README is also an augmented version of Spectacle Boilerplate's README.
 
 The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.markdown](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
 
 ## Development
 
-After downloading the boilerplate, your first order of business is to open terminal and run `npm install`
+After downloading the presentation, your first order of business is to open terminal and run `npm install`
 
 Next, run `rm -R .git` to remove the existing version control.
 
