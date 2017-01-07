@@ -62,10 +62,10 @@ export default class Presentation extends React.Component {
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="black">
-              Intro To Elm
+              Elm-entary, my dear Watson
             </Heading>
             <Heading size={1} fit caps>
-              A Purely Functional Frontend Language
+              An intro to Elm
             </Heading>
             <Link href="https://github.com/hugheskatie/intro-to-elm">
               <Text textSize="1em" textColor="elmDarkGrey">View on Github</Text>
