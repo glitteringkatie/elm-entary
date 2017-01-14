@@ -8,6 +8,7 @@ import {
   Cite,
   CodePane,
   Deck,
+  Fit,
   Fill,
   Heading,
   Image,
@@ -41,7 +42,10 @@ const images = {
   logo: require("../assets/formidable-logo.svg"),
   markdown: require("../assets/markdown.png"),
   elm: require("../assets/elm-lang.png"),
-  infomercial: require("../assets/infomercial.gif")
+  infomercial: require("../assets/infomercial.gif"),
+  loveAndSupport: require("../assets/love_and_support.jpg"),
+  performance: require("../assets/performance.png"),
+  george: require("../assets/george.gif"),
 };
 
 preloader(images);
@@ -71,22 +75,42 @@ export default class Presentation extends React.Component {
               <Text textSize="1em" textColor="elmDarkGrey">View on Github</Text>
             </Link>
           </Slide>
-          <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Elm-entary, my dear Watson
-            </Heading>
-              <List textColor="elmGrey">
-                <ListItem>Yes</ListItem>
-              </List>
-              <Image src={images.infomercial.replace("/", "")} margin="0px auto 40px"/>
+          <Slide transition={["slide"]} bgColor="primary" notes="You can even put notes on your slide. How awesome is that?">
+            <Heading fit>Entry Level Mathematics</Heading>
+            <Heading fit>Simple and user friendly</Heading>
+            <Heading fit lineHeight={1.3}>Nice for React/Redux developers!</Heading>
           </Slide>
           <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Benefits
+            <Heading size={2} caps textColor="primary" textFont="primary">
+              Get Good
             </Heading>
-            <List textColor="elmGrey">
-              <ListItem>Yes</ListItem>
-            </List>
+            <Layout>
+              <Fill>
+                <Image width="100%" src={images.loveAndSupport} padding={20}/>
+              </Fill>
+              <Fill>
+                <List
+                  style={{
+                    "list-style-position": "outside",
+                    margin: "1.65em"
+                  }}
+                  textSize=".65em"
+                >
+                  <ListItem>Purely functional</ListItem>
+                  <ListItem>Strong & static typing</ListItem>
+                  <ListItem>Compiler is nice</ListItem>
+                  <ListItem>The CLI is also very nice</ListItem>
+                  <ListItem>Null is not a thing: Nothing or (Just Bust)</ListItem>
+                  <ListItem>Pretty good performance</ListItem>
+                </List>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
+            <Link href="https://evancz.github.io/react-angular-ember-elm-performance-comparison/">
+              <Image height="50vh" src={images.performance}/>
+            </Link>
+            <Image height="30vh" src={images.george}/>
           </Slide>
           <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
