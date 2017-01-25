@@ -83,9 +83,11 @@ export default class Presentation extends React.Component {
                 >
                   <ListItem>Purely functional</ListItem>
                   <ListItem>Strong & static typing</ListItem>
+                  <ListItem textColor="elmDarkGrey"><Link href="http://debug.elm-lang.org/">We're going BACK IN TIME</Link></ListItem>
+                  <ListItem>Null is not a thing: Nothing or (Just Bust)</ListItem>
+                  <ListItem>Autodetect semver</ListItem>
                   <ListItem>Compiler is nice</ListItem>
                   <ListItem>The CLI is also very nice</ListItem>
-                  <ListItem>Null is not a thing: Nothing or (Just Bust)</ListItem>
                   <ListItem>Pretty good performance</ListItem>
                 </List>
               </Fill>
