@@ -177,8 +177,8 @@ Packages configured successfully!`}
               lang="jsx"
               textSize=".75em"
               source={`var Elm = require('dist/elm/app.js');
-  var node = document.getElementById('elm-app');
-  var app = Elm.App.embed(node);`}
+var node = document.getElementById('elm-app');
+var app = Elm.App.embed(node);`}
               margin="20px auto"
             />
             <Heading size={2} caps fit textColor="primary" textFont="primary">
@@ -194,11 +194,11 @@ Packages configured successfully!`}
               lang="jsx"
               textSize=".75em"
               source={`import Elm from 'react-elm-components';
-  import { App } from '../dist/elm/app.js';
+import { App } from '../dist/elm/app.js';
 
-  function render() {
-    return <Elm src={App} />;
-  }`}
+function render() {
+  return <Elm src={App} />;
+}`}
               margin="20px auto"
             />
           </Slide>
