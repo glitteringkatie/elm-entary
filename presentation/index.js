@@ -31,7 +31,8 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   elm: require("../assets/elm-lang.png"),
   performance: require("../assets/performance.png"),
-  george: require("../assets/george.gif")
+  george: require("../assets/george.gif"),
+  loveAndSupport: require("../assets/love_and_support.jpg")
 };
 
 preloader(images);
