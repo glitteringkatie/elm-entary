@@ -155,23 +155,6 @@ Packages configured successfully!`}
             />
           </Slide>
 
-          <Slide transition={["slide"]} bgColor="primary" notes="You can even put notes on your slide. How awesome is that?">
-            <Heading fit>
-              Learning Haskell
-            </Heading>
-            <Heading fit>
-              Charming as fuck
-            </Heading>
-            <Link href="https://see-you-legislator.surge.sh/">
-              <Heading fit textColor="elmDarkGrey">
-                See You Legislator
-              </Heading>
-            </Link>
-            <Link href="https://github.com/hugheskatie/see-you-legislator">
-              <Text textSize="1em" textColor="elmDarkGrey" lineHeight={3}>View on Github</Text>
-            </Link>
-          </Slide>
-
           <Slide transition={["slide"]} bgColor="white" notes="You can even put notes on your slide. How awesome is that?">
             <CodePane
               lang="jsx"
@@ -201,6 +184,23 @@ function render() {
 }`}
               margin="20px auto"
             />
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="primary" notes="You can even put notes on your slide. How awesome is that?">
+            <Heading fit>
+              Learning Haskell
+            </Heading>
+            <Heading fit>
+              Charming as fuck
+            </Heading>
+            <Link href="https://see-you-legislator.surge.sh/">
+              <Heading fit textColor="elmDarkGrey">
+                See You Legislator
+              </Heading>
+            </Link>
+            <Link href="https://github.com/hugheskatie/see-you-legislator">
+              <Text textSize="1em" textColor="elmDarkGrey" lineHeight={3}>View on Github</Text>
+            </Link>
           </Slide>
 
           <Slide transition={["slide"]} bgColor="primary" notes="You can even put notes on your slide. How awesome is that?">
